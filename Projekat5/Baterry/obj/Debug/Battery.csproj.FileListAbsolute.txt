@@ -1,0 +1,14 @@
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\bin\Debug\Baterry.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\bin\Debug\Baterry.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Baterry.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Baterry.pdb
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\bin\Debug\Baterry.dll
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\bin\Debug\Baterry.pdb
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Battery.csprojAssemblyReference.cache
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Battery.csproj.CoreCompileInputs.cache
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Baterry.dll
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Baterry.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\Baterry.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\Baterry.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Battery.csproj.AssemblyReference.cache
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Baterry\obj\Debug\Battery.csproj.CoreCompileInputs.cache

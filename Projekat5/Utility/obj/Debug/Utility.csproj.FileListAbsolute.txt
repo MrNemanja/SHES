@@ -1,0 +1,8 @@
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Utility\bin\Debug\Utility.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Utility\bin\Debug\Utility.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Utility\obj\Debug\Utility.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Utility\obj\Debug\Utility.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\Utility.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\Utility.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Utility\obj\Debug\Utility.csproj.AssemblyReference.cache
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache

@@ -1,0 +1,8 @@
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Potrosaci\bin\Debug\Potrosaci.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Potrosaci\bin\Debug\Potrosaci.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Potrosaci\obj\Debug\Potrosaci.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Potrosaci\obj\Debug\Potrosaci.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\Potrosaci.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\Potrosaci.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Potrosaci\obj\Debug\Potrosaci.csproj.AssemblyReference.cache
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\Potrosaci\obj\Debug\Potrosaci.csproj.CoreCompileInputs.cache

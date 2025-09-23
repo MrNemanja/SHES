@@ -1,0 +1,14 @@
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\bin\Debug\SolarPanel.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\bin\Debug\SolarPanel.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.pdb
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.csprojAssemblyReference.cache
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.csproj.CoreCompileInputs.cache
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.dll
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.pdb
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\bin\Debug\SolarPanel.dll
+C:\Users\Ja\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\bin\Debug\SolarPanel.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\SolarPanel.dll
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\output\Debug\SolarPanel.pdb
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.csproj.AssemblyReference.cache
+C:\Users\neman\Documents\GitHub\Tim6-Septembar\Projekat5\SolarPanel\obj\Debug\SolarPanel.csproj.CoreCompileInputs.cache
