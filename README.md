@@ -1,95 +1,100 @@
- It is necessary to design the system, system architecture, implement, document, and test a solution that simulates the operation and communication of a Smart Home Energy System (SHES). 
- SHES is a system that manages the operation of the home energy system and ensures optimal and stable performance.
- The system contains 5 components:
- 
- 1 Solar panels
- 2 Batteries
- 3 Consumers
- 4 Utility (electric distribution)
- 5 Electric vehicle charger
- 
- Solar Panels
- 
- Solar panels produce electrical energy proportionally to weather conditions. A household system may include multiple solar panels.
- When adding a solar panel to the system, it is defined by the following parameters:
- • Unique name
- • Maximum power
- Once added, the solar panel starts generating electrical energy depending on solar radiation intensity:
- • 0% sunlight – 0% panel power
- • ....
- • 100% sunlight – 100% panel power
- The sunlight level is entered via UI (or console application) in a separate thread and can be changed at any time. 
- The power measurement of each solar panel is sent to SHES every second.
- 
- Battery
- 
- The battery stores electrical energy for optimal usage. 
- Optimal usage implies charging the battery when energy is cheap/consumption is low and discharging when energy is expensive/consumption is high.
- When adding a battery to the system, it is defined by the following parameters:
- • Unique name
- • Maximum power
- • Capacity (in hours of operation)
- SHES manages the battery as follows:
- • From 3h to 6h charging
- • From 14h to 17h discharging
- During charging and discharging, capacity in hours changes. 
- Each minute of discharge decreases capacity by one minute, each minute of charging increases capacity by on minute. 
- SHES communicates with the battery by sending charging/discharging commands. 
- The battery communicates back by sending its capacity and operating mode.
- When charging, it behaves as a consumer; when discharging, it behaves as an energy generator.
+1. Introduction
 
- Consumers
- 
- Consumers in the system use electrical energy. 
- They can be turned on/off arbitrarily and there can be any number of them in the system.
- Each consumer is defined by:
- • Unique name
- • Consumption
+The Smart Home Energy System (SHES) is a simulation platform designed to model, manage, and optimize household energy usage. 
+It integrates solar panels, batteries, consumers, utility (electric grid), and an electric vehicle charger into a single system. 
+The purpose of SHES is to ensure stable operation and cost efficiency by simulating real-world conditions and interactions.
 
- Utility (electric distribution)
- 
- SHES obtains excess electricity from the utility. 
- The surplus is the difference between current consumption and current production. 
- The surplus is sent to the utility as an energy request, and the utility responds with a price per kWh.
- Interaction with the utility is defined as:
- • Exchange power (positive or negative)
- • Price
- 
- SHES
- 
- SHES is the central control system. 
- The goal of the system is optimal energy management and cost calculation.
- Operating costs:
- • Battery: 0 $/kWh
- • Solar panel: 0 $/kWh
- • Utility: X $/kWh
- SHES sends commands to batteries for charging/discharging and receives information about the current status of batteries, solar panels, and utility energy prices. 
- All this information is stored in a database. 
- SHES calculates a report for a selected date. 
- The report includes a chart with the following curves:
- • Solar panel production
- • Battery energy (positive and negative)
- • Utility import (positive and negative)
- • Total consumer consumption
- In addition to the chart, SHES calculates the total cost in $ for the selected date.
- 
- Application Scenario
- 
- At startup, communication with all system devices is initialized. 
- SHES calculates the required energy amount from the utility every second, which may be positive or negative. 
- A positive amount means cost for SHES since energy is imported at the given utility price ($/kWh). 
- A negative difference means the household system sells energy to the utility at the same price.
- System time should be separate from real time and should be configurable to run faster. 
- In the common XML configuration file for all applications, the relation between application seconds and real seconds is defined. 
- For example, one real second can equal X application seconds. 
- This enables simulation of a full day of system operation in 10–20 minutes.
- 
- Evaluation Criteria
- 
- 1 System design and architecture
- 2 Use of Scrum methodology – defining User Stories and tasks, planning and estimation
- 3 Solution implementation
- 4 CI cycle
-   a. Build
-   b. Unit tests
-   c. Code coverage by tests
+2. Objectives
+
+ - Simulate energy generation, storage, consumption, and utility interaction.
+ - Implement optimal energy usage strategies (battery charging/discharging).
+ - Provide real-time and accelerated-time simulations.
+ - Enable user input for weather conditions, consumers, and simulation control.
+ - Store all operational data and generate daily reports with cost analysis.
+
+3. System Architecture
+
+3.1 Components
+
+ - Solar Panels – Generate energy proportional to sunlight intensity.
+ - Battery – Stores or releases energy depending on time and demand.
+ - Consumers – Use energy dynamically, can be turned on/off.
+ - Utility – Provides/sells energy depending on surplus or shortage.
+ - EV Charger – Simulates electric vehicle charging demand.
+
+3.2 SHES Core
+
+ - Central controller for monitoring and coordination.
+ - Sends commands (charge/discharge, power allocation).
+ - Collects data from all devices every second.
+ - Stores information in a database.
+ - Produces daily reports (charts + total cost).
+
+4. Functional Requirements
+
+ 1. Solar panel management
+   - Define panels by name and max power.
+   - Generate energy based on sunlight input.
+ 2. Battery management
+   - Define batteries by name, max power, and capacity.
+   - Charge from 03:00–06:00, discharge from 14:00–17:00.
+   - Report capacity and mode (charging/discharging).
+ 3. Consumers
+   - Multiple consumers with unique names and consumption values.
+   - Ability to switch consumers on/off.
+ 4. Utility interaction
+   - Import/export electricity based on surplus/deficit.
+   - Get/set energy price per kWh.
+ 5. System reports
+   - Generate daily charts showing:
+     - Solar production
+     - Battery activity
+     - Utility import/export
+     - Consumer consumption
+     - Calculate daily cost.
+ 6. Simulation control
+   - Configurable time (accelerated simulation).
+   - Separate XML configuration file for system setup.
+
+5. Non-Functional Requirements
+
+ - Usability – Console/UI for sunlight and consumer control.
+ - Performance – Ability to simulate a full day in 10–20 minutes.
+ - Scalability – Support multiple panels, batteries, and consumers.
+ - Reliability – Ensure consistent state updates every second.
+ - Maintainability – Code structured with modular architecture.
+
+6. Development Methodology
+
+ - Scrum framework used for iterative development.
+ - Defined User Stories, sprint planning, and task estimation.
+ - CI/CD pipeline with:
+   - Automated builds
+   - Unit testing
+   - Code coverage analysis
+
+7. Implementation Details
+
+Language & Framework: C#, .NET Framework
+UI: Console application.
+Communication: Internal messaging between SHES and components (threading).
+Config: XML-based configuration file.
+
+8. Testing
+
+ - Unit tests for each component (solar panel, battery, utility, consumer).
+ - Integration tests for SHES coordination logic.
+ - Performance tests for accelerated-time simulation.
+ - CI cycle ensures test execution on each build.
+
+9. Evaluation Criteria
+
+ 1. System design and architecture quality.
+ 2. Use of Scrum methodology.
+ 3. Functional completeness of the implementation.
+ 4. CI/CD pipeline success (build, tests, coverage).
+
+10. Conclusion
+
+The SHES project demonstrates how smart home energy management can be modeled, optimized, and evaluated. 
+By simulating solar generation, battery storage, consumption, and utility interaction, SHES provides a testbed for exploring cost-saving strategies and sustainable household energy practices.
